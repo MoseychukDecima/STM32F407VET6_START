@@ -1,0 +1,6 @@
+﻿  Test_407_Led13.c
+  Linking ../VisualGDB/Debug/Test_407_Led13...
+  ------------------- Memory utilization report -------------------
+  Used FLASH: 13KB out of 1024KB (1%)
+  Used SRAM: 15KB out of 128KB (12%)
+  Used CCMRAM: 0 bytes out of 64KB (0%)

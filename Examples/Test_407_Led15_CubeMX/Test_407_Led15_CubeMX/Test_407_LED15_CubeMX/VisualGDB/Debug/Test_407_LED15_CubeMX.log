@@ -1,0 +1,6 @@
+﻿  main.c
+  Linking ../VisualGDB/Debug/Test_407_LED15_CubeMX...
+  ------------------- Memory utilization report -------------------
+  Used FLASH: 6200 bytes out of 1024KB (0%)
+  Used SRAM: 48 bytes out of 128KB (0%)
+  Used CCMRAM: 0 bytes out of 64KB (0%)
