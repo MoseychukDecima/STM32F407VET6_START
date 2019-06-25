@@ -1,0 +1,8 @@
+
+Начинаем изучать STM32 или Управляем светом по-умному  https://habr.com/ru/post/406839/
+
+STM32F407VET6 black board  https://os.mbed.com/users/hudakz/code/STM32F407VET6_Hello/
+
+Программирование МК STM32  http://narodstream.ru/programmirovanie-mk-stm32/
+
+Библиотека HAL. STM32 CUBE MX. Таймеры   http://narodstream.ru/stm-urok-5-biblioteka-hal-stm32-cube-mx-tajmery/
