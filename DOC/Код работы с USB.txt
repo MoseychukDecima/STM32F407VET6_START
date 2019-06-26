@@ -1,0 +1,42 @@
+/////////////////////////////////////////////
+В usbd_cdc_if.c
+///////////////////////////////////////////////////////
+static int8_t CDC_Receive_FS (uint8_t* Buf, uint32_t *Len)
+{
+  /* USER CODE BEGIN 6 */
+  USBD_CDC_SetRxBuffer(&hUsbDeviceFS, &Buf[0]);  
+  Buf[*Len] = 0;
+  USBD_CDC_ReceivePacket(&hUsbDeviceFS);
+  return (USBD_OK);
+  /* USER CODE END 6 */ 
+}
+/////////////////////////////////////////////////////////
+В main.с
+///////////////////////////////////////////////////////
+/* USER CODE BEGIN Includes */
+#include "usbd_cdc_if.h"
+/* USER CODE END Includes */
+///////////////////////////////////////////////////////////////////////////////////
+/* USER CODE BEGIN PV */
+/* Private variables ---------------------------------------------------------*/
+#define APP_RX_DATA_SIZE  64
+#define APP_TX_DATA_SIZE  64
+extern uint8_t UserRxBufferFS[APP_RX_DATA_SIZE];
+extern uint8_t UserTxBufferFS[APP_TX_DATA_SIZE];
+/* USER CODE END PV */
+///////////////////////////////////////////////////////////////////////////////////
+  /* USER CODE BEGIN WHILE */
+  while (1)
+  {
+uint16_t len = strlen((const char*)UserRxBufferFS);  
+    if(len > 0)
+    {
+      strncpy((char *)UserTxBufferFS, (const char*)UserRxBufferFS, len);    
+      strcat((char *)UserTxBufferFS, "\r\n");      
+      CDC_Transmit_FS((uint8_t*)UserTxBufferFS, strlen((const char*)UserTxBufferFS));      
+      memset(UserRxBufferFS, 0, sizeof(UserRxBufferFS));
+      memset(UserTxBufferFS, 0, sizeof(UserTxBufferFS));
+    }
+    
+    HAL_Delay(200);
+    /* USER CODE END WHILE */
