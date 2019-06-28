@@ -33,3 +33,4 @@ stm32f407vet6_start\stm32f4xx_hal_msp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm
 stm32f407vet6_start\stm32f4xx_hal_msp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
 stm32f407vet6_start\stm32f4xx_hal_msp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
 stm32f407vet6_start\stm32f4xx_hal_msp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
+stm32f407vet6_start\stm32f4xx_hal_msp.o: ..\USER\Board_config\defines.h

@@ -34,3 +34,4 @@ stm32f407vet6_start\gpio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_ti
 stm32f407vet6_start\gpio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
 stm32f407vet6_start\gpio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
 stm32f407vet6_start\gpio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
+stm32f407vet6_start\gpio.o: ..\USER\Board_config\defines.h

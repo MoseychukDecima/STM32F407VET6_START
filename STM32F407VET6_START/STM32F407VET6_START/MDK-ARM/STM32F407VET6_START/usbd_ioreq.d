@@ -39,6 +39,7 @@ stm32f407vet6_start\usbd_ioreq.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_
 stm32f407vet6_start\usbd_ioreq.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
 stm32f407vet6_start\usbd_ioreq.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
 stm32f407vet6_start\usbd_ioreq.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
+stm32f407vet6_start\usbd_ioreq.o: ..\USER\Board_config\defines.h
 stm32f407vet6_start\usbd_ioreq.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h
 stm32f407vet6_start\usbd_ioreq.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h
 stm32f407vet6_start\usbd_ioreq.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h

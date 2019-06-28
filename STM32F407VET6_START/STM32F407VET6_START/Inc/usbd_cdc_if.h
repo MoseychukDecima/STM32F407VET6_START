@@ -31,7 +31,8 @@
 #include "usbd_cdc.h"
 
 /* USER CODE BEGIN INCLUDE */
-
+#define APP_RX_DATA_SIZE  2048
+#define APP_TX_DATA_SIZE  2048
 /* USER CODE END INCLUDE */
 
 /** @addtogroup STM32_USB_OTG_DEVICE_LIBRARY
@@ -49,8 +50,7 @@
   * @{
   */
 /* USER CODE BEGIN EXPORTED_DEFINES */
-#define APP_RX_DATA_SIZE  2048
-#define APP_TX_DATA_SIZE  2048
+
 /* USER CODE END EXPORTED_DEFINES */
 
 /**
