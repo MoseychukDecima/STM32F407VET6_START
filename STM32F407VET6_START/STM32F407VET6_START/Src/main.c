@@ -51,6 +51,7 @@
 extern uint8_t UserRxBufferFS[APP_RX_DATA_SIZE];
 extern uint8_t UserTxBufferFS[APP_TX_DATA_SIZE];
 
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -98,7 +99,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
    HAL_TIM_Base_Start(&htim6);
    HAL_TIM_Base_Start_IT(&htim6);
-    sprintf(str_tx,"USB Transmit\r\n");
+  sprintf(str_tx,"USB Transmit\r\n");
  
   /* USER CODE END 2 */
 
@@ -106,7 +107,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-     uint16_t len = strlen((const char*)UserRxBufferFS);  
+    uint16_t len = strlen((const char*)UserRxBufferFS);  
     if(len > 0)
     {
       strncpy((char *)UserTxBufferFS, (const char*)UserRxBufferFS, len);    
@@ -115,7 +116,7 @@ int main(void)
       memset(UserRxBufferFS, 0, sizeof(UserRxBufferFS));
       memset(UserTxBufferFS, 0, sizeof(UserTxBufferFS));
     }
-       CDC_Transmit_FS((unsigned char*)str_tx, strlen(str_tx));
+    CDC_Transmit_FS((unsigned char*)str_tx, strlen(str_tx));
     HAL_Delay(500);
 
     /* USER CODE END WHILE */
